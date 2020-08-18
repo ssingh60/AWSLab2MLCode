@@ -26,10 +26,12 @@ lin_model.fit(X_train, Y_train)
 
 print("The model performance for training set")
 print("--------------------------------------")
-print('RMSE is {}'.format(rmse))
+
 
 y_test_predict = lin_model.predict(X_test)
 rmse = (np.sqrt(mean_squared_error(Y_test, y_test_predict)))
+
+print('RMSE is {}'.format(rmse))
 
 Pkl_Filename = "Pickle_LR_Model.pkl"  
 
